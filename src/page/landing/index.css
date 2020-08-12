@@ -1,0 +1,15 @@
+.landing{
+    display: grid;
+    place-items: center;
+}
+
+.landing > img{
+    width: 100%;
+}
+
+.landing > a{
+    font-weight: bold;
+    padding: 20px;
+    background: var(--color-background);
+    border-radius: 99px;
+}

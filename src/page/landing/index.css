@@ -1,6 +1,8 @@
 .landing{
     display: grid;
     place-items: center;
+    height: 100vh;
+    background: #000;
 }
 
 .landing > img{
@@ -8,7 +10,10 @@
 }
 
 .landing > a{
+    text-transform: uppercase;
     font-weight: bold;
+    color: #fff;
+    text-decoration: none;
     padding: 20px;
     background: var(--color-background);
     border-radius: 99px;

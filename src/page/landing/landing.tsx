@@ -1,6 +1,6 @@
 import React from 'react'
 import spotifyLogoImg from '../../assets/images/spotify2019-830x350.jpg'
-import { loginUrl } from '../../services/spotify';
+import loginUrl from '../../services/spotify'
 import './index.css'
 
 function Landing() {
@@ -12,4 +12,4 @@ function Landing() {
     );
   }
   
-  export default Landing;
+export default Landing;

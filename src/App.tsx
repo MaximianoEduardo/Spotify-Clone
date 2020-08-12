@@ -12,11 +12,11 @@ function App() {
     const hash = getTokenFromResponse()
     window.location.hash = ''
     
-    const accessToken = hash.accessToken
+    // const accessToken = hash.accessToken
 
-    if (accessToken){
-      setToken(token)
-    }
+    // if (accessToken){
+    //   setToken(token)
+    // }
 
   }, []);
 

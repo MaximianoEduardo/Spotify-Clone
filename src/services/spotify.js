@@ -36,6 +36,15 @@ export const getTokenFromResponse = () => {
 
 }
 
+export const filterTokenResponse = () => {
+
+    const hash = getTokenFromResponse()
+    const accessToken = hash.access_token
+    return accessToken
+
+}
+
+
 const loginUrl = `${authEndpoint}?client_id=${clientID}&redirect_uri=${redirectUri}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`
 
 export default loginUrl

@@ -1,28 +1,34 @@
 import React, { useEffect, useState } from 'react';
 import Landing from './page/landing/landing';
 import { getTokenFromResponse } from './services/spotify';
+import { filterTokenResponse } from './services/spotify';
 
 function App() {
+
+  const [token, setToken] = useState(null)
+
 
   // Run code base on given condition
   useEffect(() =>{
 
-    const [token, setToken] = useState(null)
-
-    const hash = getTokenFromResponse()
+    const _token = filterTokenResponse()
     window.location.hash = ''
-    
-    // const accessToken = hash.accessToken
 
-    // if (accessToken){
-    //   setToken(token)
-    // }
+    if (_token){
+      setToken(_token)
+    }
 
   }, []);
 
   return (
     <div className="App">
-      <Landing />
+      {
+        token ? (
+          <h1>Logado</h1>
+        ) : (
+          <Landing />
+        )
+      }
     </div>
   );
 }

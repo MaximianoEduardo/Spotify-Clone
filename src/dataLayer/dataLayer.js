@@ -6,7 +6,7 @@ export const DataLayer = ({ initialState, reducer, children }) => {
 
     return (
 
-        <DataLayerContext.Provider value={useReducer(initialState, reducer)}>
+        <DataLayerContext.Provider value={useReducer(reducer, initialState)}>
             {children}
         </DataLayerContext.Provider>
 

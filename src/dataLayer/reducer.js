@@ -3,13 +3,14 @@ export const initialState = {
     playlists: [],
     playing: false,
     item: null,
-
+    // Token just for develop
+    token: 'BQDnnwDHI-ofhB5XSmM7m04CrEkUl6AYvL28Fn8AMcdJcdPkSaDl_g0k2MAPsyP_MdKegygpvJTDZ2mhaQZqqbhsRq2tvqi3UtCq1dxdj1ggQkAj992vFiHgO8Yi7FE1VCBllg1ZJoxxlIpfwbD3d8R3tW3y'
 }
 // Empty DataLayer
 
 const reducer = (state, action) => {
 
-    console.log(action)
+    console.log('Action: ', action)
 
     // Action => type, [payload]
 
@@ -18,6 +19,11 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 user: action.user
+            }
+        case 'SET_TOKEN':
+            return {
+                ...state,
+                token: action.token
             }
         default:
             return state

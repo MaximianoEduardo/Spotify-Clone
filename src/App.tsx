@@ -32,7 +32,7 @@ function App() {
       })
 
       spotify.getMe().then(user => {
-                
+
         dispatch({
           type: 'SET_USER',
           user,
@@ -48,7 +48,7 @@ function App() {
     <div className="App">
       {
         token ? (
-          <Player />
+          <Player spotify={spotify} />
         ) : (
           <Landing />
         )

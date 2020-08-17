@@ -7,7 +7,7 @@ import './index.css'
 interface spotifyProps {
 
   spotify: Array<{
-    user: string
+    user: string,
   }>
 
 }

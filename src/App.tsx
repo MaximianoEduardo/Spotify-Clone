@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Landing from './page/landing/landing';
 import { filterTokenResponse } from './services/spotify';
 import SpotifyWebApi from 'spotify-web-api-js'
+import Player from './page/player';
 
 
 const spotify = new SpotifyWebApi()
@@ -20,7 +21,9 @@ function App() {
 
       setToken(_token)
 
-      spotify.setAccessToken(_token) // Given Access To Spotify API
+      // Given Access To Spotify API
+      
+      spotify.setAccessToken(_token) 
       
       // getMe => Get User Account
 
@@ -30,7 +33,6 @@ function App() {
 
       })
 
-
     }
 
   }, []);
@@ -39,7 +41,7 @@ function App() {
     <div className="App">
       {
         token ? (
-          <h1>Logado</h1>
+          <Player />
         ) : (
           <Landing />
         )

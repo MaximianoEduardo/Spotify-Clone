@@ -32,12 +32,18 @@ function App() {
       })
 
       spotify.getMe().then(user => {
-
         dispatch({
           type: 'SET_USER',
           user,
         })
 
+      })
+
+      spotify.getUserPlaylists().then(playlists =>{
+        dispatch({
+          type: 'SET_PLAYLISTS',
+          playlists: playlists
+        })
       })
 
     }

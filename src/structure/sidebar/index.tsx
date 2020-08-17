@@ -4,10 +4,17 @@ import SideBarOptions from '../../components/sideBarOptions'
 import HomeIcon from '@material-ui/icons/Home'
 import SearchIcon from '@material-ui/icons/Search'
 import LibrayMusicIcon from '@material-ui/icons/LibraryMusic'
+import { useDataLayerValue } from '../../dataLayer/dataLayer'
 import './index.css'
 
+
 function Sidebar() {
+
+    const [{ playlists }, dispatch ] = useDataLayerValue()
+
     return (
+      
+      
       <div className="sidebar">
         <img className='sidebar__logo' src={spotifyLogo} alt="Logo Spotify"/>
         <SideBarOptions title='Home' Icon={HomeIcon} />
@@ -17,6 +24,18 @@ function Sidebar() {
         <br/>
         <strong className='sidebar__title'>Playlist</strong>
         <hr/>
+
+        { 
+          
+          
+          playlists?.items?.map((playlist:any) => (
+
+            <SideBarOptions title={playlist.name} />
+
+          ))
+        }
+
+
       </div>
     );
   }

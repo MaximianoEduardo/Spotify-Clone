@@ -2,18 +2,17 @@ import React from 'react'
 import Sidebar from '../../structure/sidebar'
 import Body from '../../structure/body'
 import './index.css'
+import Footer from '../../structure/footer'
 
 
 interface spotifyProps {
 
-  spotify: Array<{
-    user: string,
-  }>
+  spotify: React.ReactNode
 
 }
 
 
-const Player: React.FC<spotifyProps> = ({ spotify, ...rest }) => {
+const Player: React.FC<spotifyProps> = ({ spotify }) => {
 
   return (
     <div className="player">
@@ -21,6 +20,7 @@ const Player: React.FC<spotifyProps> = ({ spotify, ...rest }) => {
         <Sidebar />
         <Body />
       </div>
+      <Footer />
     </div>
   );
 

@@ -5,6 +5,7 @@ export const initialState = {
     item: null,
     // Token just for develop
     token: 'BQDnnwDHI-ofhB5XSmM7m04CrEkUl6AYvL28Fn8AMcdJcdPkSaDl_g0k2MAPsyP_MdKegygpvJTDZ2mhaQZqqbhsRq2tvqi3UtCq1dxdj1ggQkAj992vFiHgO8Yi7FE1VCBllg1ZJoxxlIpfwbD3d8R3tW3y'
+    //token: null
 }
 // Empty DataLayer
 
@@ -24,6 +25,11 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 token: action.token
+            }
+        case 'SET_PLAYLISTS':
+            return {
+                ...state,
+                playlists: action.playlists
             }
         default:
             return state

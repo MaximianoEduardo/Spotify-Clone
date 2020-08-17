@@ -18,6 +18,11 @@
   --color-box-base: #FFFFFF;
   --color-box-footer: #FAFAFC;
 }
+
+body::-webkit-scrollbar{
+  display: none
+}
+
 *{
   margin: 0;
 }

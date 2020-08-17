@@ -17,6 +17,16 @@
     color: #fff;
 }
 
-.sidebarOptions__icon{
+.sidebarOptions > svg{
     padding: 0 10px;
+}
+
+.sidebarOptions > p{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+    max-width: 24ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

@@ -4,8 +4,8 @@ export const initialState = {
     playing: false,
     item: null,
     // Token just for develop
-    token: 'BQDnnwDHI-ofhB5XSmM7m04CrEkUl6AYvL28Fn8AMcdJcdPkSaDl_g0k2MAPsyP_MdKegygpvJTDZ2mhaQZqqbhsRq2tvqi3UtCq1dxdj1ggQkAj992vFiHgO8Yi7FE1VCBllg1ZJoxxlIpfwbD3d8R3tW3y'
-    //token: null
+    //token: 'BQDnnwDHI-ofhB5XSmM7m04CrEkUl6AYvL28Fn8AMcdJcdPkSaDl_g0k2MAPsyP_MdKegygpvJTDZ2mhaQZqqbhsRq2tvqi3UtCq1dxdj1ggQkAj992vFiHgO8Yi7FE1VCBllg1ZJoxxlIpfwbD3d8R3tW3y'
+    token: null
 }
 // Empty DataLayer
 

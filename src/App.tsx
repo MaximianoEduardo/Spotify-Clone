@@ -3,12 +3,14 @@ import Landing from './page/landing/landing';
 import { filterTokenResponse } from './services/spotify';
 import SpotifyWebApi from 'spotify-web-api-js'
 import Player from './page/player';
+import { useDataLayerValue } from './services/dataLayer/dataLayer';
 
 
 const spotify = new SpotifyWebApi()
 
 function App() {
 
+  const [{ user }, dispatch] = useDataLayerValue()
   const [token, setToken] = useState(null)
 
   // Run code base on given condition
@@ -30,12 +32,19 @@ function App() {
       spotify.getMe().then(user => {
 
         console.log('User', user)
+        
+        dispatch({
+          type: 'SET_USER',
+          user,
+        })
 
       })
 
     }
 
   }, []);
+
+  console.log('userFromDataLayer', user)
 
   return (
     <div className="App">

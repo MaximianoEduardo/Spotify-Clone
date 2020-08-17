@@ -4,8 +4,14 @@ export const DataLayerContext = createContext()
 
 export const DataLayer = ({ initialState, reducer, children }) => {
 
-    <StateContext.Provider value={useReducer(initialState, reducer)}>
-        {children}
-    </StateContext.Provider>
+    return (
+
+        <DataLayerContext.Provider value={useReducer(initialState, reducer)}>
+            {children}
+        </DataLayerContext.Provider>
+
+    )
 
 }
+
+export const useDataLayerValue = () => useContext(DataLayerContext)

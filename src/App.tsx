@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Landing from './page/landing/landing';
 import { filterTokenResponse } from './services/spotify';
 import SpotifyWebApi from 'spotify-web-api-js'
@@ -43,6 +43,13 @@ function App() {
         dispatch({
           type: 'SET_PLAYLISTS',
           playlists: playlists
+        })
+      })
+
+      spotify.getPlaylist('37i9dQZEVXcT1yRyIYlxSl').then(response => {
+        dispatch({
+          type: 'SET_DISCOVER_WEEKLY',
+          discover_weekly: response
         })
       })
 

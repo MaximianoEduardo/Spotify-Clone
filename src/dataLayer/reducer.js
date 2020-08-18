@@ -13,8 +13,7 @@ const reducer = (state, action) => {
 
     console.log('Action: ', action)
 
-    // Action => type, [payload]
-
+    // Action => type, [payload] 
     switch(action.type) {
         case 'SET_USER':
             return {

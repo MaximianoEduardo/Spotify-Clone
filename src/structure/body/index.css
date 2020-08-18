@@ -4,6 +4,11 @@
     height: 100vh;
     color: #fff;
     padding: 30px;
+    overflow-y: auto;
+}
+
+.body::-webkit-scrollbar{
+    display: none;
 }
 
 .body__info{

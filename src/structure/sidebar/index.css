@@ -5,7 +5,13 @@
     color: #fff;
     min-width: 230px;
     padding: 0 10px;
+    overflow: auto;
 }
+
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+
 
 .sidebar__logo{
     margin: 0 auto;

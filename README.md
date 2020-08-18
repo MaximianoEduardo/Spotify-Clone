@@ -1,5 +1,5 @@
 <h1 align="center">
-  Spotify Clone
+  Spotify Clone 🔥
 </h1>
 
 <p align="center">
@@ -7,13 +7,15 @@
 </p>
 
 <p align="center">
-  <a href="#como_usar-how-to-use">📚 Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#como_usar-how-to-use">📚 How to Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#fire-technologies">🔥 Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">📝 License</a>
 </p>
 
 <p align="center">
-  Projeto Spotify Clone, baseado em  Clever Programmer
+  :handshake: Project Spotify Clone, based on Clever Programmer
+  - Still remaining funcionabilitys
+  - Playling Songs and Playlists
 </p>
 
 ---

@@ -31,6 +31,11 @@
     margin-right: 20px;
 }
 
+.body__songs{
+    margin: 20px -30px;
+    
+}
+
 .body__shuffle{
     font-size: 80px !important;
     margin: 20px 0 20px 50px;
